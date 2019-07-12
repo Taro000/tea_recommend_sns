@@ -15,7 +15,7 @@
 - A user's preference accumulates, and it is used to recommend some tea to the user.
 - A user's preference accumulates is also used to an evaluation of a Tea. So this SNS will be also Tea dictionary.
 
-### Souece of Idea
+### Source of Idea
 ##### Tea community in Twitter
 Some people tweets tea's photo, their impressions, tea's name and a producting area, when they drink a tea.
 This SNS collect user's evaluation of tea with a post.
