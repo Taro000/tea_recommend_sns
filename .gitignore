@@ -2,6 +2,6 @@ venv/
 
 .idea/
 
-./media/*/
+media/*/
 
-./web_service/settings.py/
+web_service/settings.py
