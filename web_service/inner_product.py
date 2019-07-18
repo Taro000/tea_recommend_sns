@@ -66,3 +66,35 @@ def create_preference(username, category):
         roundness=eval_average['roundness_average'],
         smooth_texture=eval_average['smooth_texture_average'],
     )
+
+
+def update_tea_values(tea_id):
+    tea = Tea.objects.get(id=tea_id)
+    eval_average = Evaluation.objects.filter(tea=tea, like=True).all() \
+        .aggregate(
+        strong_average=Avg('strong'),
+        long_average=Avg('long'),
+        heavy_average=Avg('heavy'),
+        complex_average=Avg('complex'),
+        gorgeous_average=Avg('gorgeous'),
+        sweet_average=Avg('sweet'),
+        bitter_average=Avg('bitter'),
+        sour_average=Avg('sour'),
+        umami_average=Avg('umami'),
+        aftertaste_average=Avg('aftertaste'),
+        roundness_average=Avg('roundness'),
+        smooth_texture_average=Avg('smooth_texture'),
+    )
+    tea.strong = eval_average['strong_average']
+    tea.long = eval_average['long_average']
+    tea.heavy = eval_average['heavy_average']
+    tea.complex = eval_average['complex_average']
+    tea.gorgeous = eval_average['gorgeous_average']
+    tea.sweet = eval_average['sweet_average']
+    tea.bitter = eval_average['bitter_average']
+    tea.sou = eval_average['sour_average']
+    tea.umami = eval_average['umami_average']
+    tea.aftertaste = eval_average['aftertaste_average']
+    tea.roundness = eval_average['roundness_average']
+    tea.smooth_texture = eval_average['smooth_texture_average']
+    tea.save()

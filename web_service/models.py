@@ -79,6 +79,12 @@ class Evaluation(models.Model):
     roundness = models.FloatField()
     smooth_texture = models.FloatField()
 
+    class Meta:
+        unique_together = (
+            ('user', 'tea',),
+            ('user', 'tea', 'category',),
+        )
+
     def __str__(self):
         return self.user.profile_name + '-' + self.tea.tea_name
 
@@ -99,6 +105,12 @@ class Preference(models.Model):
     aftertaste = models.FloatField()
     roundness = models.FloatField()
     smooth_texture = models.FloatField()
+
+    class Meta:
+        unique_together = (
+            'user',
+            'category',
+        )
 
     def __str__(self):
         return self.user.profile_name + '-pref-' + str(self.id)
