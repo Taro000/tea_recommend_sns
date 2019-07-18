@@ -8,6 +8,7 @@
 - [System Environment](#sys_env)
 - [ER Diagram](#er)
 - [System Diagram](#sys_dig)
+- [API Endpoint](#endpoint)
 
 ## <a id="tldr" href="#tldr">tl;dr</a>
 - SNS like Twitter Specialized in 'TEA'
@@ -56,3 +57,8 @@ This SNS collect user's evaluation of tea with a post.
 
 ## <a id="sys_dig" href="#sys_dig">System Diagram</a>
 <img width="780" alt="スクリーンショット 2019-07-12 17 31 25" src="https://user-images.githubusercontent.com/30229356/61114313-0cb4c280-a4cb-11e9-8f7f-534982de4980.png">
+
+## <a id="endpoint" href="#endpoint">API Endpoint</a>
+### RESTful API Endpoint
+
+### UnRESTful API 
