@@ -59,6 +59,19 @@ This SNS collect user's evaluation of tea with a post.
 <img width="780" alt="スクリーンショット 2019-07-12 17 31 25" src="https://user-images.githubusercontent.com/30229356/61114313-0cb4c280-a4cb-11e9-8f7f-534982de4980.png">
 
 ## <a id="endpoint" href="#endpoint">API Endpoint</a>
+### Pages and Action of this service
+#### Pages
+- index : timeline
+- profile : profile of user, old posts of user, follow, follower, posts user liked
+- setting : core-info of user
+#### Action 
+- upload and delete a post
+- like and delike a post
+- follow and defollow a user
+- upload a evaluation
+- upload and update a user profile
+- upload and update a user info
 ### RESTful API Endpoint
 
 ### UnRESTful API 
+
