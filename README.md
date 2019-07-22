@@ -64,6 +64,9 @@ This SNS collect user's evaluation of tea with a post.
 - index : timeline
 - profile : profile of user, old posts of user, follow, follower, posts user liked
 - setting : core-info of user
+- tea : info of tea
+- evaluation : evaluations of user
+- preference :  preference of user
 #### Action 
 - upload and delete a post
 - like and delike a post
@@ -71,6 +74,14 @@ This SNS collect user's evaluation of tea with a post.
 - upload a evaluation
 - upload and update a user profile
 - upload and update a user info
+- search posts, tea, and users
+### API Policy
+Not complete REST, but Not completely fitting in UI -> Make a unit which is grouped by some entities 
+<br>! Why -> robust to UI changes
+#### Units
+1. <b>Profile</b> : profile of user, posts of user
+1. <b>APIs</b> : uris of all API
+1. <b>Post&Evaluation</b> : post and evakuation about a tea
 ### RESTful API Endpoint
 
 ### UnRESTful API 
